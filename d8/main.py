@@ -128,13 +128,11 @@ def data_analyser(dataset):
             for key,value in words_dictionary.items():
                 analysis_value = sorted(value)
                 result_value = "".join(analysis_value)
-                #print(result_number,result_value,result_number == result_value)
                 if result_number == result_value:
                     pre_built_number.append(key)
         built_number = int("".join(pre_built_number))
-        print(built_number)
         result += built_number
-    print(result)
+    print("Added outputs:",result)
                     
 def main():
     dataset = read_file()
